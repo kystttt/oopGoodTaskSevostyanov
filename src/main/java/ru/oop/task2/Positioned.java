@@ -7,7 +7,7 @@ package ru.oop.task2;
  * @author vpyzhyanov
  * @since 21.10.2020
  */
-interface Positioned {
+public interface Positioned {
 
     /**
      * Текущее местоположение
