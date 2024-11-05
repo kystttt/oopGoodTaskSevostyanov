@@ -1,7 +1,9 @@
 package ru.oop.task3;
 
 
-
+/**
+ * Велосипед
+ */
 public class Bike implements Transport {
     private Position position;
 
@@ -26,5 +28,13 @@ public class Bike implements Transport {
         //something code here
     }
 
+    /**
+     * Сесть в этот транспорт
+     * @param person
+     */
+    @Override
+    public void getIntoTheTransport(Person person){
+
+    }
 
 }

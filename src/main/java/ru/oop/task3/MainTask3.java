@@ -1,7 +1,5 @@
 package ru.oop.task3;
 
-import ru.oop.task2.Bike;
-
 import java.util.Arrays;
 import java.util.List;
 
@@ -31,9 +29,10 @@ public class MainTask3 {
      * @see Position
      */
     public void moveTo(Person person, Position destination) {
-        List<Transport> transports = Arrays.asList(new Car(person), new Bus("43", person), new Bus("50", person));
+        List<Transport> transports = Arrays.asList(new Car(person), new Bus("43", person), new Bus("50", person), new Bike(person));
         for (Transport transport : transports) {
             person.walk(transport.getPosition());
+            transport.getIntoTheTransport(person);
             transport.ride(destination);
         }
         person.walk(destination);

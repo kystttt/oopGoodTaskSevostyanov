@@ -31,6 +31,7 @@ public class MainTask2 {
     public void moveTo(Person person, Position destination){
         Transport transport = new Bike();
         person.walk(transport.getPosition());
+        transport.getIntoTheTransport(person);
         transport.ride(destination);
         person.walk(destination);
     }

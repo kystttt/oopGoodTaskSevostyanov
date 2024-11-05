@@ -1,6 +1,9 @@
 package ru.oop.task3;
 
 
+/**
+ * Автобус
+ */
 public class Bus implements Transport {
     private String busNumber;
     private Position position;
@@ -25,5 +28,14 @@ public class Bus implements Transport {
     @Override
     public void ride(Position destination){
         //something code here
+    }
+
+    /**
+     * Сесть в этот транспорт
+     * @param person
+     */
+    @Override
+    public void getIntoTheTransport(Person person){
+
     }
 }

@@ -1,12 +1,21 @@
 package ru.oop.task1;
 
+/**
+ * Машина
+ */
 public class Car {
-    private Position position;
 
     public Car(Position curPos){
 
     }
 
+    /**
+     * Человек садится в машину
+     * @param person
+     */
+    public void getIntoTheCar(Person person){
+
+    }
     /**
      * Геттер, который показывает расположение машины
      * @return

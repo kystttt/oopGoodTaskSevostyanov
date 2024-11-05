@@ -1,7 +1,18 @@
 package ru.oop.task2;
 
 
-public interface Transport extends Positioned{
+interface Transport extends Positioned{
 
+    /**
+     * Сесть в транспорт
+     *
+     * @param person
+     */
+    void getIntoTheTransport(Person person);
+
+    /**
+     * Доехать до нужной точки
+     * @param destination
+     */
     void ride(Position destination);
 }
